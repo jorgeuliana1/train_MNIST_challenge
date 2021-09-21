@@ -151,4 +151,7 @@ print(f"Final accuracy: {final_accuracy:.2f}%")
 # Salvando o loss ao longo do treino em uma pasta:
 plt_path = os.path.join('output', 'graph', f'mnist_{epochs}_{-np.log10(lr):.0f}.png')
 plt.plot(iters_loss.keys(), iters_loss.values())
+plt.title("Loss ao longo do treino")
+plt.xlabel("Iterações totais (sem separação por epoch)")
+plt.ylabel("Loss obtido na iteração")
 plt.savefig(plt_path)
