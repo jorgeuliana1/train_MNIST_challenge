@@ -27,6 +27,8 @@ O desafio encontrado foi superar a acurácia de 99,70% alcançada pelo algoritmo
 
 ## Os testes
 
+A execução do script é realizada com `python net.py`.
+
 Para realizar os testes defini algumas regras:
 * Diminuiria o learning rate sempre que o loss começasse a oscilar muito;
 * Caso o loss não oscilasse muito, mas a acurácia fosse baixa, aumentaria o número de epochs;
